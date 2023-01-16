@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菓洞甜點工作室-購物車</title>
+    <link rel="website_icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/shopping_cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="top_nav">
+        <a href="index.html">
+            <div class="homebtn">
+                <div class="logo"></div>
+                <div class="name">
+                    <p>菓洞甜點工作室</p>
+                    <p>Dessert Cave Workshop</p>
+                </div>
+            </div>
+        </a>
+        <div class="options">
+            <a href="./story.html">
+                <li>▸
+                    <p>品牌故事</p>
+                </li>
+            </a>
+            <a href="./shopping_cart.html">
+                <li class="active">▸
+                    <p><i class="fa-solid fa-cart-shopping"></i></p>
+                </li>
+            </a>
+            <div class="line"></div>
+            <a href="./new_product.html">
+                <li>▸
+                    <p>新品上市</p>
+                </li>
+            </a>
+            <a href="./hot_product.html">
+                <li>▸
+                    <p>熱門產品</p>
+                </li>
+            </a>
+            <a href="./serial.html">
+                <li>▸
+                    <p>系列商品</p>
+                </li>
+            </a>
+            <a href="./news.html">
+                <li>▸
+                    <p>最新消息</p>
+                </li>
+            </a>
+        </div>
+    </div>
+    <div class="page_7">
+        <div class="content">
+            <div class="banner">
+                <img src="./img/cover-7.jpg" alt="">
+                <p>SHOPPING CART</p>
+            </div>
+            <hr>
+            <h2>我的購物車</h2>
+            <h4>(今日購買之商品最快可明日取貨)</h4>
+            <div class="shopping_list">
+                <div class="list">
+                    <div class="product">
+                        <img src="./img/product_4-2-2.jpg" alt="">
+                        <div class="text">
+                            <h4>藍莓乳酪塔</h4>
+                            <p>數量：1</p>
+                        </div>
+                    </div>
+                    <div class="close">✕</div>
+                    <div class="price">NT$600</div>
+                </div>
+                <div class="list">
+                    <div class="product">
+                        <img src="./img/product_4-3-2.jpg" alt="">
+                        <div class="text">
+                            <h4>香草荔葡萄夏洛特</h4>
+                            <p>數量：1</p>
+                        </div>
+                    </div>
+                    <div class="close">✕</div>
+                    <div class="price">NT$800</div>
+                </div>
+                <div class="line"></div>
+                <div class="total">
+                    <div class="text">訂單明細</div>
+                    <div class="price">NT$1400</div>
+                </div>
+                <div class="btn">CHECK OUT</div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <div class="logo"></div>
+                    <div class="infos">
+                        <div class="info">
+                            <div class="icon">
+                                <img src="./img/location.png" alt="">
+                            </div>
+                            <p>地址：406 臺中市台中市中清路二段 675 號</p>
+                        </div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="./img/telephone.png" alt="">
+                            </div>
+                            <p>聯絡電話：0958-792-622</p>
+                        </div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="./img/time.png" alt="">
+                            </div>
+                            <p>營業時間：14:00~19:00 / 週二公休</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://www.facebook.com/dessertcave0725/" target="_blank">
+                        <div class="fb">
+                            <img src="./img/fb.png" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/dessertcave_taichung/?utm_medium=copy_link" target="_blank">
+                        <div class="ig">
+                            <img src="./img/ig.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ham-menu"></div>
+    <div class="side_menu">
+        <div class="logo"></div>
+        <ul class="menu">
+            <a href="./index.html"><li>• 首頁</li></a>
+            <a href="./story.html"><li>• 品牌故事</li></a>
+            <a href="./shopping_cart.html"><li class="active">• 我的購物車</li></a>
+            <hr>
+            <a href="./new_product.html"><li>• 新品上市</li></a>
+            <a href="./hot_product.html"><li>• 熱門產品</li></a>
+            <a href="./serial.html"><li>• 系列商品</li></a>
+            <a href="./news.html"><li>• 最新消息</li></a>
+        </ul>
+    </div>
+
+    <script>
+        $(".ham-menu").click(function(){
+            $(".side_menu").addClass("active");
+            $(".homebtn").css("visibility","hidden");
+        });
+
+        $(".top_nav").click(function(){
+            $(".side_menu").removeClass("active");
+            $(".homebtn").css("visibility","visible");
+        });
+        $(".page_7").click(function(){
+            $(".side_menu").removeClass("active");
+            $(".homebtn").css("visibility","visible");
+        });
+
+        $(".side_menu li").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".side_menu").removeClass("active");
+            $(".homebtn").css("visibility","visible");
+        });
+
+        $(".options li").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+</body>
+</html>
